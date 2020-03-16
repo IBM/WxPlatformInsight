@@ -1640,7 +1640,7 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="platforminsight.monitoring.integrationserver.pub.service:getServiceMetrics" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="wx.platforminsight.monitoring.integrationserver.pub.service:getServiceMetrics" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 
