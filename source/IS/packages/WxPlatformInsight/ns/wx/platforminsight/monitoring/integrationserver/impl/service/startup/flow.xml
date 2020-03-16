@@ -142,4 +142,8 @@
 <INVOKE TIMEOUT="" SERVICE="wx.platforminsight.monitoring.integrationserver.impl.client.wxprometheus:registerMetricsWithWxPrometheus" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
+
+<INVOKE TIMEOUT="" SERVICE="wx.platforminsight.monitoring.integrationserver.impl.service:addSchedulerForThreadTopMonitoring" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+</INVOKE>
 </FLOW>

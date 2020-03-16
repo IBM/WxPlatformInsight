@@ -5,10 +5,10 @@
   <value name="system_package">no</value>
   <value name="version">1.0</value>
   <record name="startup_services" javaclass="com.wm.util.Values">
-    <null name="platforminsight.monitoring.integrationserver.impl.service:startup"/>
+    <null name="wx.platforminsight.monitoring.integrationserver.impl.service:startup"/>
   </record>
   <record name="shutdown_services" javaclass="com.wm.util.Values">
-    <null name="platforminsight.monitoring.integrationserver.impl.service:shutdown"/>
+    <null name="wx.platforminsight.monitoring.integrationserver.impl.service:shutdown"/>
   </record>
   <null name="replication_services"/>
   <record name="requires" javaclass="com.wm.util.Values">

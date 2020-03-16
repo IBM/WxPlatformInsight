@@ -139,7 +139,7 @@
 </MAP>
 </INVOKE>
 
-<INVOKE TIMEOUT="" SERVICE="platforminsight.monitoring.integrationserver.impl.client.wxprometheus:registerMetricsWithWxPrometheus" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+<INVOKE TIMEOUT="" SERVICE="wx.platforminsight.monitoring.integrationserver.impl.client.wxprometheus:registerMetricsWithWxPrometheus" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT></COMMENT>
 </INVOKE>
 </FLOW>
