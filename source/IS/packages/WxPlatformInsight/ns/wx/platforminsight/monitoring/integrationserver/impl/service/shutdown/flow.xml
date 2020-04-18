@@ -5,6 +5,10 @@
 
   <!-- nodes -->
 
+<INVOKE TIMEOUT="" SERVICE="wx.platforminsight.monitoring.integrationserver.impl.service:removeSchedulerForThreadTopMonitoring" VALIDATE-IN="$none" VALIDATE-OUT="$none">
+  <COMMENT></COMMENT>
+</INVOKE>
+
 <INVOKE TIMEOUT="" SERVICE="pub.storage:deleteStore" VALIDATE-IN="$none" VALIDATE-OUT="$none">
   <COMMENT>Remove WxPrometheus.asyncMetricsStore</COMMENT>
 
