@@ -444,7 +444,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -747,7 +747,7 @@
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2162,7 +2162,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2323,7 +2323,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2497,7 +2497,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2618,7 +2618,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -2767,7 +2767,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -2887,7 +2887,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
@@ -3011,7 +3011,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">Monitoring  Adapter listener state, 0 = disabled 1 = enabled -1 = OTHER</value>
+  <value name="xml">Monitoring  Adapter connection state, 0 = disabled 1 = enabled -1 = OTHER</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">record</value>
     <value name="node_subtype">unknown</value>
@@ -3210,7 +3210,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -3371,7 +3371,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -3611,7 +3611,7 @@
         <value name="is_global">false</value>
         <value name="is_soap_array_encoding_used">false</value>
         <value name="modifiable">true</value>
-        <value name="rec_ref">wx.platforminsight.monitoring.integrationserver.impl.doc:jdbcPoolValues</value>
+        <value name="rec_ref">base.plattformmetrics.impl.doc:jdbcPoolValues</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">unknown</value>
