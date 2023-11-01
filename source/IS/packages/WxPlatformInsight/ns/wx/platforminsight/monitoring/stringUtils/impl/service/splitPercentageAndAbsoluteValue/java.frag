@@ -2,11 +2,18 @@
 
 <Values version="2.0">
   <value name="name">splitPercentageAndAbsoluteValue</value>
+  <array name="sig" type="value" depth="1">
+    <value>[i] field:0:required formattedValue</value>
+    <value>[o] field:0:required percentage</value>
+    <value>[o] field:0:required absolute</value>
+    <value>[o] field:0:required unit</value>
+  </array>
+  <value name="sigtype">java 3.5</value>
   <value name="encodeutf8">true</value>
   <value name="body">SURhdGFNYXAgcGxNYXAgPSBuZXcgSURhdGFNYXAocGlwZWxpbmUpOwpTdHJpbmcgZm9ybWF0dGVk
 VmFsdWUgPSBwbE1hcC5nZXRBc1N0cmluZygiZm9ybWF0dGVkVmFsdWUiKTsKTWF0Y2hlciBwYXJ0
 cyA9IGZvcm1hdFBhdHRlcm4ubWF0Y2hlcihmb3JtYXR0ZWRWYWx1ZSk7CmlmIChwYXJ0cy5tYXRj
 aGVzKCkpewoJcGxNYXAucHV0KCJwZXJjZW50YWdlIiwgcGFydHMuZ3JvdXAoMSkpOwoJcGxNYXAu
 cHV0KCJhYnNvbHV0ZSIsIHBhcnRzLmdyb3VwKDIpKTsKCXBsTWFwLnB1dCgidW5pdCIsIHBhcnRz
-Lmdyb3VwKDMpKTsKfQoJ</value>
+Lmdyb3VwKDMpKTsKfQoJCg==</value>
 </Values>
