@@ -3,7 +3,14 @@
 <Values version="2.0">
   <value name="encodeutf8">true</value>
   <array name="imports" type="value" depth="1">
+    <value>com.wm.app.b2b.server.dispatcher.trigger.Trigger</value>
+    <value>com.wm.lang.ns.NSService</value>
+    <value>com.wm.app.b2b.server.ns.Namespace</value>
     <value>com.softwareag.util.IDataMap</value>
     <value>com.wm.app.b2b.server.ServerAPI</value>
+  </array>
+  <value name="shared"></value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
   </array>
 </Values>

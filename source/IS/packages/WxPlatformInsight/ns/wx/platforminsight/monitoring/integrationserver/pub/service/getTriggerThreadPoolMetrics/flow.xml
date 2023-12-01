@@ -1028,10 +1028,18 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
         <value name="field_name">serverName</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
@@ -1171,10 +1179,18 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
         <value name="field_name">serverName</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
@@ -1448,10 +1464,18 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
         <value name="field_name">serverName</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
@@ -1615,10 +1639,18 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
         <value name="field_name">serverName</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
@@ -1888,10 +1920,18 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
         <value name="field_name">serverName</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
@@ -2066,10 +2106,18 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
         <value name="field_name">serverName</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
@@ -2712,10 +2760,18 @@
       <record javaclass="com.wm.util.Values">
         <value name="node_type">field</value>
         <value name="node_subtype">unknown</value>
+        <value name="node_comment"></value>
+        <record name="node_hints" javaclass="com.wm.util.Values">
+          <value name="field_usereditable">true</value>
+          <value name="field_largerEditor">false</value>
+          <value name="field_password">false</value>
+        </record>
         <value name="is_public">false</value>
         <value name="field_name">serverName</value>
         <value name="field_type">string</value>
         <value name="field_dim">0</value>
+        <array name="field_options" type="value" depth="1">
+        </array>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
@@ -6216,6 +6272,27 @@
 </MAPCOPY>
 </MAP>
 </MAPINVOKE>
+
+<MAPINVOKE SERVICE="wx.platforminsight.monitoring.integrationserver.impl.map:createTriggerPackageLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerValues;4;0;wx.platforminsight.monitoring.integrationserver.impl.doc:triggerValues/name;1;0" TO="/triggerName;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerNameLabel;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 
@@ -7873,6 +7950,27 @@
 </MAPCOPY>
 </MAP>
 </MAPINVOKE>
+
+<MAPINVOKE SERVICE="wx.platforminsight.monitoring.integrationserver.impl.map:createTriggerPackageLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerValues;4;0;wx.platforminsight.monitoring.integrationserver.impl.doc:triggerValues/name;1;0" TO="/triggerName;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerNameLabel;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 
@@ -9512,6 +9610,27 @@
 
 <MAPCOPY FROM="/triggerValues;4;0;wx.platforminsight.monitoring.integrationserver.impl.doc:triggerValues/processingStatus;2;0/activeThreadCount;1;0" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/value;3.5;0">
 </MAPCOPY>
+
+<MAPINVOKE SERVICE="wx.platforminsight.monitoring.integrationserver.impl.map:createTriggerPackageLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerValues;4;0;wx.platforminsight.monitoring.integrationserver.impl.doc:triggerValues/name;1;0" TO="/triggerName;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerNameLabel;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 
@@ -11197,6 +11316,27 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPINVOKE SERVICE="wx.platforminsight.monitoring.integrationserver.impl.map:createTriggerPackageLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerValues;4;0;wx.platforminsight.monitoring.integrationserver.impl.doc:triggerValues/name;1;0" TO="/triggerName;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerNameLabel;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 
@@ -12836,6 +12976,27 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPINVOKE SERVICE="wx.platforminsight.monitoring.integrationserver.impl.map:createTriggerPackageLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerValues;4;0;wx.platforminsight.monitoring.integrationserver.impl.doc:triggerValues/name;1;0" TO="/triggerName;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerNameLabel;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 
@@ -14475,6 +14636,27 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPINVOKE SERVICE="wx.platforminsight.monitoring.integrationserver.impl.map:createTriggerPackageLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerValues;4;0;wx.platforminsight.monitoring.integrationserver.impl.doc:triggerValues/name;1;0" TO="/triggerName;1;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/triggerNameLabel;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 
