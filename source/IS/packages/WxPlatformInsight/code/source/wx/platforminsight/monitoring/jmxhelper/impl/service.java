@@ -30,6 +30,22 @@ public final class service
 
 
 
+	public static final void getCpuMXBean (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(getCpuMXBean)>> ---
+		// @sigtype java 3.5
+		// [o] object:0:required process_cpu_seconds_total
+		double d = ( (com.sun.management.OperatingSystemMXBean)ManagementFactory.getOperatingSystemMXBean() ).getProcessCpuTime(); //in Nanoseconds
+		IDataMap pipelineMap = new IDataMap(pipeline);
+		pipelineMap.put( "process_cpu_seconds_total", d / (1000 * 1000 * 1000) );
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
 	public static final void getMemoryMXBean (IData pipeline)
         throws ServiceException
 	{
@@ -88,6 +104,7 @@ public final class service
 		
 		
 		
+			
 			
 		// --- <<IS-END>> ---
 
