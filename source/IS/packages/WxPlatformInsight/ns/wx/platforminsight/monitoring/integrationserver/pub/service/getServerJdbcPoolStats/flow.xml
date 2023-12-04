@@ -5371,7 +5371,7 @@
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">Monitoring fail-fast mode of JDBC server connection   </value>
+  <value name="xml">Monitoring fail-fast mode of JDBC server connection  0 = off, 1 = is in fail-fast mode</value>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">record</value>
     <value name="node_subtype">unknown</value>
