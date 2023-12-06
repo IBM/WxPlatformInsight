@@ -1305,6 +1305,12 @@
 
 <MAPCOPY FROM="/label;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[1];4;1;wx.prometheus.pub.documents:label">
 </MAPCOPY>
+
+<MAPCOPY FROM="/label_service;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+
+<MAPCOPY FROM="/label_package;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[3];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
 </MAP>
 </MAPINVOKE>
 
@@ -2147,6 +2153,12 @@
   <!-- nodes -->
 
 <MAPCOPY FROM="/label;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[1];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+
+<MAPCOPY FROM="/label_service;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+
+<MAPCOPY FROM="/label_package;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[3];4;1;wx.prometheus.pub.documents:label">
 </MAPCOPY>
 </MAP>
 </MAPINVOKE>
@@ -3047,6 +3059,12 @@
   <!-- nodes -->
 
 <MAPCOPY FROM="/label;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[1];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+
+<MAPCOPY FROM="/label_service;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[2];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+
+<MAPCOPY FROM="/label_package;4;0;wx.prometheus.pub.documents:label" TO="/textMetric;4;0;wx.prometheus.pub.documents:text/metrics;4;0;wx.prometheus.pub.documents:metric/labels[3];4;1;wx.prometheus.pub.documents:label">
 </MAPCOPY>
 </MAP>
 </MAPINVOKE>
