@@ -32,6 +32,7 @@ public final class service
 		// @sigtype java 3.5
 		// [o] object:0:required currentTimeMillis
 		IDataUtil.put(pipeline.getCursor(), "currentTimeMillis", new java.util.Date().getTime());
+			
 		// --- <<IS-END>> ---
 
                 

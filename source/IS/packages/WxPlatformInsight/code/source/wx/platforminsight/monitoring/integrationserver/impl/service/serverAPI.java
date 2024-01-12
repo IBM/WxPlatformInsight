@@ -30,6 +30,43 @@ public final class serverAPI
 
 
 
+	public static final void getPackageNameOfService (IData pipeline)
+        throws ServiceException
+	{
+		// --- <<IS-START(getPackageNameOfService)>> ---
+		// @sigtype java 3.5
+		// [i] field:0:required nsName
+		// [i] field:0:optional default
+		// [o] field:0:required packageName
+		IDataCursor pipelineCursor = pipeline.getCursor();
+		String	nsName    = IDataUtil.getString( pipelineCursor, "nsName" );
+		String  defaultPN = IDataUtil.getString( pipelineCursor, "default" );
+		pipelineCursor.destroy();
+		
+		if ( defaultPN == null ) 
+			defaultPN = "unknown";
+		String       back = defaultPN;
+		
+		if ( nsName != null && nsName.length() > 0 ) {
+			try {
+			NSService  service = (NSService) Namespace.current().getNode( nsName );
+			back               = service.getPackage().getName();
+			}
+			catch (Throwable e) {
+				//Suppress exception
+			}
+		}
+		pipelineCursor = pipeline.getCursor();
+		IDataUtil.put(pipelineCursor, "packageName", back );
+		pipelineCursor.destroy();
+			
+		// --- <<IS-END>> ---
+
+                
+	}
+
+
+
 	public static final void getPackageNameOfTrigger (IData pipeline)
         throws ServiceException
 	{
