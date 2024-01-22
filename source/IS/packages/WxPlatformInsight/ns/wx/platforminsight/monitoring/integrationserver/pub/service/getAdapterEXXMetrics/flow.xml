@@ -1873,7 +1873,7 @@
 
   <!-- nodes -->
 
-<MAPCOPY FROM="/listenerList;4;1;wx.platformMonitoring.pub:assetStatus/package;1;0" TO="/packageName;1;0">
+<MAPCOPY FROM="/statusList;4;0;wx.platformMonitoring.pub:assetStatus/package;1;0" TO="/packageName;1;0">
 </MAPCOPY>
 </MAP>
 
