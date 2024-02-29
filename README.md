@@ -31,3 +31,13 @@ Initial release.
 This package is optional and provides metrics of process which are running inside Process Engine. To provide the metrics, the monitoring service `pub.monitor.process.model:getModelList` is called. The metrics `sag_pe_processes_completed`, `sag_pe_processes_failed` and `sag_pe_processes_started` can be scrapped.
 
 *Tipp:* See the [webMethods Dashboard](./dashboards/webMethods.json) and use the `rate()` function to get the wanted monitoring signal. 
+
+### 1.1.0 `WxPlatformInsight4PE` Package
+
+Following metrics are added to detect non activities on process instances. The metrics are only printed for started processes:
+
+* `sag_pe_process_non_activity_duration_time`: Time duration since last activity.
+* `sag_pe_process_running_duration_time`: Time duraton since process intstance was started.
+
+*
+* 
