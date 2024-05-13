@@ -39,5 +39,6 @@ Following metrics are added to detect non activities on process instances. The m
 * `sag_pe_process_non_activity_duration_time`: Time duration since last activity.
 * `sag_pe_process_running_duration_time`: Time duraton since process intstance was started.
 
-*
-* 
+### 2.0.1 `WxPlatformInsight` Package
+
+Add label `threadid` in metric `sag_is_thread_cpu_usage` to avoid warning message `Error on ingesting samples with different value but same timestamp` in Prometheus server.
