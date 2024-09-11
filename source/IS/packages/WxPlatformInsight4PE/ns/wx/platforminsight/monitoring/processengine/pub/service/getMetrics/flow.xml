@@ -786,17 +786,6 @@
 
 <MAPCOPY FROM="/currentTimeMillis;3;0" TO="/textMetrics;4;0;wx.prometheus.pub.documents:text/metrics;4;1;wx.prometheus.pub.documents:metric/timestamp;3.7;0">
 </MAPCOPY>
-
-<MAPINVOKE SERVICE="wx.platforminsight.monitoring.processengine.impl.map:createProcessInstanceLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
-
-  <!-- nodes -->
-
-<MAP MODE="INVOKEINPUT">
-</MAP>
-
-<MAP MODE="INVOKEOUTPUT">
-</MAP>
-</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 </MAP>
@@ -4315,37 +4304,26 @@
 
   <!-- nodes -->
 
-<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/status;1;0">
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/statusSet;1;1">
   <DATA ENCODING="XMLValues" I18N="true">
 
 <Values version="2.0">
-  <value name="xml">1</value>
+  <array name="xml" type="value" depth="1">
+    <value>1</value>
+    <value>4</value>
+  </array>
   <record name="type" javaclass="com.wm.util.Values">
     <value name="node_type">unknown</value>
     <value name="node_subtype">unknown</value>
-    <value name="node_comment"></value>
-    <record name="node_hints" javaclass="com.wm.util.Values">
-      <value name="field_usereditable">true</value>
-      <value name="field_largerEditor">false</value>
-      <value name="field_password">false</value>
-    </record>
     <value name="is_public">false</value>
-    <value name="field_name">status</value>
+    <value name="field_name">statusSet</value>
     <value name="field_type">string</value>
-    <value name="field_dim">0</value>
+    <value name="field_dim">1</value>
     <value name="field_opt">true</value>
-    <array name="field_options" type="value" depth="1">
-      <value>1</value>
-      <value>2</value>
-      <value>4</value>
-      <value>8</value>
-      <value>1024</value>
-      <value>2048</value>
-      <value>32768</value>
-    </array>
     <value name="nillable">true</value>
     <value name="form_qualified">false</value>
     <value name="is_global">false</value>
+    <value name="is_soap_array_encoding_used">true</value>
   </record>
 </Values>
 </DATA>
@@ -4430,12 +4408,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -4558,12 +4537,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -4819,12 +4799,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -4945,12 +4926,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -5287,6 +5269,27 @@
 </Values>
 </DATA>
 </MAPSET>
+
+<MAPINVOKE SERVICE="wx.platforminsight.monitoring.processengine.impl.map:getProcessStatusLabel" VALIDATE-IN="$none" VALIDATE-OUT="$none" INVOKE-ORDER="0">
+
+  <!-- nodes -->
+
+<MAP MODE="INVOKEINPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/instances;2;0/lastStatus;3.6;0" TO="/status;3.6;0">
+</MAPCOPY>
+</MAP>
+
+<MAP MODE="INVOKEOUTPUT">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/label;4;0;wx.prometheus.pub.documents:label" TO="/textMetrics;4;0;wx.prometheus.pub.documents:text/metrics;4;1;wx.prometheus.pub.documents:metric/labels[5];4;1;wx.prometheus.pub.documents:label">
+</MAPCOPY>
+</MAP>
+</MAPINVOKE>
 </MAP>
 </MAPFOREACH>
 </MAP>
@@ -5438,12 +5441,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -5607,12 +5611,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -5788,12 +5793,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -5916,12 +5922,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -6177,12 +6184,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -6303,12 +6311,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -6796,12 +6805,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -6965,12 +6975,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
@@ -7103,12 +7114,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
     </array>
     <value name="modifiable">true</value>
@@ -7256,12 +7268,13 @@
         <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
         <value name="is_public">false</value>
-        <value name="field_name">status</value>
+        <value name="field_name">statusSet</value>
         <value name="field_type">string</value>
-        <value name="field_dim">0</value>
+        <value name="field_dim">1</value>
         <value name="nillable">true</value>
         <value name="form_qualified">false</value>
         <value name="is_global">false</value>
+        <value name="is_soap_array_encoding_used">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
         <value name="node_type">record</value>
