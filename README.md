@@ -49,4 +49,4 @@ Started and failed processes are printed in `sag_pe_process_non_activity_duratio
 
 ### 2.0.2 `WxPlatformInsight` Package
 
-Watt property `watt.wx.platformMonitoring.thread.top.enabled` added. Switch to disable or enable the evaluation and list of the top (50) threads.
+Watt property `watt.wx.platformMonitoring.thread.top.enabled` added. Switch to disable or enable the evaluation and list of the top (50) threads. The default is `true`.
