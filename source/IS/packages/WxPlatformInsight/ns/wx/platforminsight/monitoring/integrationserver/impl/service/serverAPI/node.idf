@@ -9,8 +9,4 @@
     <value>com.softwareag.util.IDataMap</value>
     <value>com.wm.app.b2b.server.ServerAPI</value>
   </array>
-  <value name="shared"></value>
-  <value name="extends"></value>
-  <array name="implements" type="value" depth="1">
-  </array>
 </Values>

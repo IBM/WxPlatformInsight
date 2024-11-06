@@ -46,3 +46,7 @@ Add label `threadid` in metric `sag_is_thread_cpu_usage` to avoid warning messag
 ### 1.2.0 `WxPlatformInsight4PE` Package
 
 Started and failed processes are printed in `sag_pe_process_non_activity_duration_time` and `sag_pe_process_running_duration_time`. Additional, a label `status` is added. The process instance status is written to this label.
+
+### 2.0.2 `WxPlatformInsight` Package
+
+Watt property `watt.wx.platformMonitoring.thread.top.enabled` added. Switch to disable or enable the evaluation and list of the top (50) threads.
