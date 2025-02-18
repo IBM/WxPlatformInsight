@@ -8,6 +8,6 @@
   </array>
   <value name="sigtype">java 3.5</value>
   <value name="encodeutf8">true</value>
-  <value name="body">SURhdGFNYXAgcGxNYXAgPSBuZXcgSURhdGFNYXAocGlwZWxpbmUpOwpwbE1hcC5wdXQoIm1ldHJp
-YyIsIHBsTWFwLmdldChwbE1hcC5nZXQoIm1ldHJpY05hbWUiKSkpOwo=</value>
+  <value name="body">SURhdGFNYXAgcGxNYXAgPSBuZXcgSURhdGFNYXAocGlwZWxpbmUpOw0KcGxNYXAucHV0KCJtZXRy
+aWMiLCBwbE1hcC5nZXQocGxNYXAuZ2V0KCJtZXRyaWNOYW1lIikpKTsNCg==</value>
 </Values>

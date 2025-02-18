@@ -38,6 +38,13 @@ Watt property `watt.wx.platformMonitoring.thread.top.enabled` added. Switch to d
 
 Same version as `v2.0.2`. Switch version numbering from 3 digits `2.0.2` to 2 digits `2.2`.
 
+### v2.3
+
+Following changes are done in monitoring of running services ...
+
+* `sag_is_services_running` ignores services in `Wx` packages.
+* `sag_is_service_running` provides the name of running service as label
+
 ## Disclaimer
 
 ### IBM Public Repository Disclosure
