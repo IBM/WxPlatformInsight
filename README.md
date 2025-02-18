@@ -6,6 +6,11 @@ This project provides Prometheus metrics on IS assets.
 
 A sample Grafana dashboard for metrics which are provided by `WxPlatformInsight` and `WxPlatformInsight4PE` are [here](./resources/dashboards/webMethods.json) 
 
+## Related Work
+
+* [WxPrometheus](https://github.com/IBM/WxPrometheus)
+* [WxPlatformMonitoring](https://github.com/IBM/WxPlatformMonitoring)
+
 ## Version History
 
 ### v1.0.0
