@@ -11,6 +11,13 @@ A sample Grafana dashboard for metrics which are provided by `WxPlatformInsight`
 * [WxPrometheus](https://github.com/IBM/WxPrometheus)
 * [WxPlatformMonitoring](https://github.com/IBM/WxPlatformMonitoring)
 
+## Dependencies 
+
+Following dependent packages must be also installed ...
+
+* [WxPrometheus](https://github.com/IBM/WxPrometheus)
+* [WxPlatformMonitoring](https://github.com/IBM/WxPlatformMonitoring)
+
 ## Version History
 
 ### v1.0.0
