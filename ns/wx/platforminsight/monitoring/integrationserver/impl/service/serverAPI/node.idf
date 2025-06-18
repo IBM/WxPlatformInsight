@@ -3,10 +3,33 @@
 <Values version="2.0">
   <value name="encodeutf8">true</value>
   <array name="imports" type="value" depth="1">
+    <value>java.util.List</value>
+    <value>java.util.ArrayList</value>
+    <value>java.util.Iterator</value>
     <value>com.wm.app.b2b.server.dispatcher.trigger.Trigger</value>
     <value>com.wm.lang.ns.NSService</value>
     <value>com.wm.app.b2b.server.ns.Namespace</value>
     <value>com.softwareag.util.IDataMap</value>
     <value>com.wm.app.b2b.server.ServerAPI</value>
+    <value>com.softwareag.is.monitor.api.API</value>
+    <value>com.softwareag.is.monitor.api.FieldNames</value>
+    <value>com.softwareag.is.monitor.api.ISearchResult</value>
+    <value>com.softwareag.is.monitor.api.ISearchResults</value>
+  </array>
+  <value name="shared">cHJpdmF0ZSBzdGF0aWMgYm9vbGVhbiBjb250YWlucyggU3RyaW5nW10gZmlsdGVyLCBTdHJpbmcg
+bmFtZSApIHsKCWlmICggZmlsdGVyICE9IG51bGwgKQoJCWZvciAoIGludCBpID0gMDsgaSA8IGZp
+bHRlci5sZW5ndGg7IGkrKyApCgkJCWlmICggbmFtZS5zdGFydHNXaXRoKCBmaWx0ZXJbIGkgXSAp
+ICkKCQkJCXJldHVybiB0cnVlOwoJcmV0dXJuIGZhbHNlOwp9CgoKcHJpdmF0ZSBzdGF0aWMgSURh
+dGFbXSBjcmVhdGVMYWJlbHMoIFN0cmluZyBzZXJ2aWNlLCBTdHJpbmcgcGFja2FnZU5hbWUgKSB7
+CglJRGF0YSBiYWNrW10gPSBuZXcgSURhdGFbIDIgXTsKCWJhY2tbIDAgXSA9IElEYXRhRmFjdG9y
+eS5jcmVhdGUoKTsKCWJhY2tbIDEgXSA9IElEYXRhRmFjdG9yeS5jcmVhdGUoKTsKCUlEYXRhQ3Vy
+c29yIGN1cnNvciA9IGJhY2tbIDAgXS5nZXRDdXJzb3IoKTsKCUlEYXRhVXRpbC5wdXQoIGN1cnNv
+ciwgImxhYmVsX25hbWUiLCAibmFtZSIgKTsKCUlEYXRhVXRpbC5wdXQoIGN1cnNvciwgImxhYmVs
+X3ZhbHVlIiwgc2VydmljZSApOwoJY3Vyc29yLmRlc3Ryb3koKTsKCWN1cnNvciA9IGJhY2tbIDEg
+XS5nZXRDdXJzb3IoKTsKCUlEYXRhVXRpbC5wdXQoIGN1cnNvciwgImxhYmVsX25hbWUiLCAicGFj
+a2FnZSIgKTsKCUlEYXRhVXRpbC5wdXQoIGN1cnNvciwgImxhYmVsX3ZhbHVlIiwgcGFja2FnZU5h
+bWUgKTsKCWN1cnNvci5kZXN0cm95KCk7CgoJcmV0dXJuIGJhY2s7Cn0KCQ==</value>
+  <value name="extends"></value>
+  <array name="implements" type="value" depth="1">
   </array>
 </Values>

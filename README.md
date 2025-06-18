@@ -57,6 +57,10 @@ Following changes are done in monitoring of running services ...
 * `sag_is_services_running` ignores services in `Wx` packages.
 * `sag_is_service_running` provides the name of running service as label
 
+### v2.4
+
+Performance and runtime metrics for IS (flow-) services added. For retrieving these metrics the internal IS monitor must be enabled.
+
 ## Disclaimer
 
 ### IBM Public Repository Disclosure

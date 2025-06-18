@@ -8,8 +8,8 @@
   </array>
   <value name="sigtype">java 3.5</value>
   <value name="encodeutf8">true</value>
-  <value name="body">SURhdGFNYXAgcGxNYXAgPSBuZXcgSURhdGFNYXAocGlwZWxpbmUpOw0KT2JqZWN0IG9iamVjdCA9
-IHBsTWFwLmdldCgib2JqZWN0Iik7DQppZiAob2JqZWN0ID09IG51bGwpew0KCXBsTWFwLnB1dCgi
-b2JqZWN0QXNTdHJpbmciLCBudWxsKTsNCn0NCmVsc2V7DQoJcGxNYXAucHV0KCJvYmplY3RBc1N0
-cmluZyIsIG9iamVjdC50b1N0cmluZygpKTsNCn0NCg0KCQ0K</value>
+  <value name="body">SURhdGFNYXAgcGxNYXAgPSBuZXcgSURhdGFNYXAocGlwZWxpbmUpOwpPYmplY3Qgb2JqZWN0ID0g
+cGxNYXAuZ2V0KCJvYmplY3QiKTsKaWYgKG9iamVjdCA9PSBudWxsKXsKCXBsTWFwLnB1dCgib2Jq
+ZWN0QXNTdHJpbmciLCBudWxsKTsKfQplbHNlewoJcGxNYXAucHV0KCJvYmplY3RBc1N0cmluZyIs
+IG9iamVjdC50b1N0cmluZygpKTsKfQoKCQo=</value>
 </Values>
