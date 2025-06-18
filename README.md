@@ -59,7 +59,7 @@ Following changes are done in monitoring of running services ...
 
 ### v2.4
 
-Performance and runtime metrics for IS (flow-) services added. For retrieving these metrics the internal IS monitor must be enabled.
+Performance and runtime metrics of IS (flow-) services added. For retrieving these metrics the internal IS monitor must be enabled.
 
 ## Disclaimer
 
