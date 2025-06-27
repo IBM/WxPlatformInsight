@@ -61,6 +61,10 @@ Following changes are done in monitoring of running services ...
 
 Performance and runtime metrics of IS (flow-) services added. For retrieving these metrics the internal IS monitor must be enabled.
 
+### v2.5
+
+Remove double quote character `"` in IS scheduler task description which is provided in label `schedulername`.
+
 ## Disclaimer
 
 ### IBM Public Repository Disclosure
