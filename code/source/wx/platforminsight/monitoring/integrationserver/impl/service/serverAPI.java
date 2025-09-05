@@ -168,11 +168,16 @@ public final class serverAPI
 					IDataCursor metricsCursor = id.getCursor();
 					IDataUtil.put( metricsCursor, "metric_name", metricName );
 					IDataUtil.put( metricsCursor, "value", Float.valueOf( value ) );
-					NSService  service = (NSService) Namespace.current().getNode( serviceName );
-					IDataUtil.put( metricsCursor, "labels", createLabels( serviceName, service.getPackage().getName() ) );
-					metricsCursor.destroy();
-					metrics.add( id );
-					i++;
+					try {
+						NSService  service = (NSService) Namespace.current().getNode( serviceName );
+						IDataUtil.put( metricsCursor, "labels", createLabels( serviceName, service.getPackage().getName() ) );
+						metricsCursor.destroy();
+						metrics.add( id );
+						i++;
+					}
+					catch ( ClassCastException e ) {
+						metricsCursor.destroy();						
+					}
 				}
 			}
 			pipelineCursor = pipeline.getCursor();

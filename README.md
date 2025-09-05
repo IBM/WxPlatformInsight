@@ -65,6 +65,10 @@ Performance and runtime metrics of IS (flow-) services added. For retrieving the
 
 Remove double quote character `"` in IS scheduler task description which is provided in label `schedulername`.
 
+### v2.6
+
+Solves `ClassCastException` in `platforminsight.monitoring.impl.service.serverAPI:getServiceRuntimeMetrics`
+
 ## Disclaimer
 
 ### IBM Public Repository Disclosure
