@@ -76,7 +76,8 @@ public final class service
 	}
 
 	// --- <<IS-START-SHARED>> ---
-	private static Pattern formatPattern = Pattern.compile("^(\\d{1,3}) ?% ?\\((\\d+) ?(\\)|[^\\)]+)*\\)$");
+	private static Pattern formatPattern = Pattern.compile("^(\\d{1,3}) ?% ?\\((\\d{1,5}) ?([^\\)]{0,10})\\)$");
+	                                                        
 	// --- <<IS-END-SHARED>> ---
 }
 
